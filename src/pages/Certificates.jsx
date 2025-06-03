@@ -1,0 +1,1 @@
+export function Certificates() { return <div>Certificates Page</div>; }
