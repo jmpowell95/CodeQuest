@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "Hello World",
+    "explanation": "Every language has a way to show text. In Python, you use the print() function.",
+    "example": "print(\"Hello, world!\")",
+    "task": "Change the code to print your name instead.",
+    "hint": "Replace 'Hello, world!' with your own name.",
+    "starter_code": "print(\"Hello, world!\")"
+  },
+  {
+    "id": 2,
+    "title": "Variables",
+    "explanation": "Variables store information you want to use later. Use = to assign a value.",
+    "example": "name = \"James\"\nprint(name)",
+    "task": "Create a variable called age and set it to your age. Then print it.",
+    "hint": "Use: age = 28\nprint(age)",
+    "starter_code": "age = \nprint(age)"
+  },
+  {
+    "id": 3,
+    "title": "Data Types",
+    "explanation": "Python has numbers, strings, and booleans as common data types.",
+    "example": "name = \"James\"  # string\nage = 28      # int\nis_happy = True  # boolean",
+    "task": "Create one variable of each type.",
+    "hint": "Use quotes for strings, numbers directly, and True/False for booleans.",
+    "starter_code": ""
+  },
+  {
+    "id": 4,
+    "title": "User Input",
+    "explanation": "You can ask the user for input using input().",
+    "example": "name = input(\"What's your name? \")\nprint(\"Hello, \" + name)",
+    "task": "Ask the user for their favorite color and print it.",
+    "hint": "Use: input(\"Question?\") and then print it",
+    "starter_code": ""
+  },
+  {
+    "id": 5,
+    "title": "Comments",
+    "explanation": "Comments start with # and are ignored by Python.",
+    "example": "# This is a comment\nprint(\"Hello\")",
+    "task": "Write a comment above a print statement.",
+    "hint": "Start your comment with #",
+    "starter_code": ""
+  },
+  {
+    "id": 6,
+    "title": "Arithmetic",
+    "explanation": "You can add (+), subtract (-), multiply (*), and divide (/) numbers.",
+    "example": "print(3 + 4)\nprint(10 / 2)",
+    "task": "Do a math operation of your choice.",
+    "hint": "Use operators like + or *",
+    "starter_code": ""
+  },
+  {
+    "id": 7,
+    "title": "Strings",
+    "explanation": "Strings are text. You can combine them using +.",
+    "example": "first = \"Code\"\nlast = \"Quest\"\nprint(first + last)",
+    "task": "Combine two strings with a space in between.",
+    "hint": "Add a space: \" \"",
+    "starter_code": ""
+  },
+  {
+    "id": 8,
+    "title": "String Formatting",
+    "explanation": "Use f-strings to insert values into text.",
+    "example": "name = \"Alex\"\nprint(f\"Hi {name}!\")",
+    "task": "Use an f-string to print your name and age.",
+    "hint": "Use f\"text {variable}\"",
+    "starter_code": ""
+  },
+  {
+    "id": 9,
+    "title": "Lists",
+    "explanation": "Lists store multiple items in one variable.",
+    "example": "colors = [\"red\", \"blue\", \"green\"]\nprint(colors[0])",
+    "task": "Make a list of 3 foods and print the second one.",
+    "hint": "Index starts at 0",
+    "starter_code": ""
+  },
+  {
+    "id": 10,
+    "title": "If Statements",
+    "explanation": "Use if to run code only when a condition is true.",
+    "example": "age = 20\nif age > 18:\n  print(\"Adult\")",
+    "task": "Check if a number is positive.",
+    "hint": "Use if number > 0",
+    "starter_code": ""
+  },
+  {
+    "id": 11,
+    "title": "Else Statements",
+    "explanation": "Use else for what happens if the condition is false.",
+    "example": "if False:\n  print(\"Yes\")\nelse:\n  print(\"No\")",
+    "task": "Use if/else to say if a number is even or odd.",
+    "hint": "number % 2 == 0 means even",
+    "starter_code": ""
+  },
+  {
+    "id": 12,
+    "title": "Elif",
+    "explanation": "Use elif for more than two choices.",
+    "example": "x = 10\nif x < 5:\n  print(\"small\")\nelif x == 10:\n  print(\"ten\")",
+    "task": "Use if/elif/else to check number ranges.",
+    "hint": "Use multiple conditions",
+    "starter_code": ""
+  },
+  {
+    "id": 13,
+    "title": "Loops - While",
+    "explanation": "A while loop repeats while a condition is true.",
+    "example": "x = 0\nwhile x < 5:\n  print(x)\n  x += 1",
+    "task": "Print numbers 1 to 3 using while.",
+    "hint": "Start at 1 and stop at 4",
+    "starter_code": ""
+  },
+  {
+    "id": 14,
+    "title": "Loops - For",
+    "explanation": "A for loop goes through a list or range.",
+    "example": "for i in range(3):\n  print(i)",
+    "task": "Print each letter in a name using a loop.",
+    "hint": "Use for char in \"name\"",
+    "starter_code": ""
+  },
+  {
+    "id": 15,
+    "title": "Functions",
+    "explanation": "Functions group code to reuse. Define with def.",
+    "example": "def greet():\n  print(\"Hi\")\ngreet()",
+    "task": "Write a function that prints your favorite food.",
+    "hint": "Use def and call it",
+    "starter_code": ""
+  },
+  {
+    "id": 16,
+    "title": "Function Parameters",
+    "explanation": "You can pass info to functions using parameters.",
+    "example": "def greet(name):\n  print(f\"Hi {name}\")\ngreet(\"Alex\")",
+    "task": "Make a function that takes 2 numbers and prints their sum.",
+    "hint": "Use def add(a, b)",
+    "starter_code": ""
+  },
+  {
+    "id": 17,
+    "title": "Return Values",
+    "explanation": "Functions can return values instead of printing.",
+    "example": "def square(x):\n  return x * x\nprint(square(4))",
+    "task": "Return the cube of a number.",
+    "hint": "Use return x ** 3",
+    "starter_code": ""
+  },
+  {
+    "id": 18,
+    "title": "Dictionaries",
+    "explanation": "Dictionaries store key-value pairs.",
+    "example": "person = {\"name\": \"Alex\", \"age\": 30}\nprint(person[\"name\"])",
+    "task": "Make a dict for a pet with 2 traits.",
+    "hint": "Use {\"key\": value}",
+    "starter_code": ""
+  },
+  {
+    "id": 19,
+    "title": "Boolean Logic",
+    "explanation": "You can combine conditions using and/or.",
+    "example": "if age > 18 and is_student:\n  print(\"OK\")",
+    "task": "Check if age is 18 and name is 'Sam'",
+    "hint": "Use and",
+    "starter_code": ""
+  },
+  {
+    "id": 20,
+    "title": "Nested Conditions",
+    "explanation": "You can put ifs inside ifs.",
+    "example": "if True:\n  if False:\n    print(\"No\")",
+    "task": "Use a nested if to check 2 things.",
+    "hint": "Put one if inside another",
+    "starter_code": ""
+  }
+]

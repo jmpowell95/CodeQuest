@@ -1,28 +1,38 @@
 
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { getLessonById } from '../utils/loadPythonLessons';
 
 export function Lesson() {
   const { id } = useParams();
-  const [code, setCode] = useState('');
+  const lesson = getLessonById(id);
+
+  const [code, setCode] = useState(lesson?.starter_code || '');
   const [output, setOutput] = useState('');
 
   const runCode = () => {
     if (code.includes('print')) {
-      setOutput('Code ran successfully. ✅');
+      setOutput('✅ Code ran successfully!');
     } else {
-      setOutput('Try using a print statement. 🤖');
+      setOutput('🤖 Try using print or follow the task instructions.');
     }
   };
 
+  if (!lesson) return <p>Lesson not found.</p>;
+
   return (
     <div style={{ padding: '2rem' }}>
-      <h2>Lesson {id}</h2>
+      <h2>{lesson.title}</h2>
+      <p>{lesson.explanation}</p>
+      <pre style={{ background: '#111', padding: '1rem', borderRadius: '8px' }}>
+        {lesson.example}
+      </pre>
+      <p><strong>Task:</strong> {lesson.task}</p>
+      <p><strong>Hint:</strong> {lesson.hint}</p>
       <textarea
         style={{ width: '100%', height: '150px' }}
         value={code}
         onChange={(e) => setCode(e.target.value)}
-        placeholder="Write your Python code here..."
       />
       <button onClick={runCode} style={{ marginTop: '1rem' }}>Run Code</button>
       {output && (
