@@ -72,6 +72,4 @@ export default function App() {
           />
         </Routes>
       </Router>
-    </UserProvider>
-  );
-}
+    </UserP
