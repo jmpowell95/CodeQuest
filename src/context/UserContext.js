@@ -1,1 +1,1 @@
-import { createContext } from 'react'; export const UserProvider = ({ children }) => children;
+export const UserProvider = ({ children }) => children;
