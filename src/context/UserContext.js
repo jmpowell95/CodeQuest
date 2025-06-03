@@ -1,1 +1,0 @@
-export const UserProvider = ({ children }) => children;
